@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Asap Condensed;
+}
+.section1{
+    background-color: rgb(192, 192, 192);
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+.nikilogo{
+    height: 60px;
+    width: 60px;
+}
+ul li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 18px 5px ;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.section2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.section3{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+.img1 ,.img2{
+    height: 100px;
+    width: 100px;
+}
+.select{
+    display: flex;
+    justify-content:space-between;
+}
+.sub3_2{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    width: 300px;
+    background-color: #ffff;
+    color: #000;
+    gap: 5px;
+    padding: 20px 0px;
+}
+.size{
+    text-align: center;
+    border-radius: 10px;
+    border: 0.5px solid #000;
+    padding: 10px;
+}
+.mainimg img{
+    height: 500px;
+    width: 500px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    /* border-radius: 20px; */
+}
+button{
+    padding: 10px;
+    color: #000;
+    font-weight:600;
+    font-size:larger;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+.border{
+    border-color: 0.5px solid black;
+    background-color: #000000;
+    color: white;
+}
+.oranage{
+    color: rgb(239, 103, 5);
+}
+.light{
+    font-weight: 200;
+}
+@media screen and (max-width:768px){
+    *{
+        font-size: 10px;
+    }
+.mainimg img{
+        height: 250px;
+        width: 250px;
+    }
+    .sub3_2{
+    width: 200px;
+    gap: 3px;
+    padding: 15px 0px;
+    font-size: 10px;
+    }
+}
+@media screen and (max-width:426px){
+    *{
+        font-size: 7px;
+    }
+    .mainimg img{
+        height: 250px;
+        width: 250px;
+    }
+    .section3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:376px){
+    .names li{
+        display: none;
+    }
+    .section2{
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+}
